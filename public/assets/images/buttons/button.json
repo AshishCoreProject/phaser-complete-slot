@@ -1,0 +1,135 @@
+{
+   "textures": [
+		{
+			"image": "button.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 800,
+				"h": 80
+		},
+		"scale": 1,
+    "frames": [
+        {
+            "filename": "btn-info.png",
+            "frame": {
+                "w": 72,
+                "h": 69,
+                "x": 10,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn-line.png",
+            "frame": {
+                "w": 240,
+                "h": 70,
+                "x": 102,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "totalwin.png",
+            "frame": {
+                "w": 209,
+                "h": 82,
+                "x": 362,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn-coin.png",
+            "frame": {
+                "w": 100,
+                "h": 91,
+                "x": 591,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn-maxbet.png",
+            "frame": {
+                "w": 100,
+                "h": 91,
+                "x": 711,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn-spin.png",
+            "frame": {
+                "w": 153,
+                "h": 90,
+                "x": 831,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "auto",
+            "frame": {
+                "w": 100,
+                "h": 91,
+                "x": 1004,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn_play.png",
+            "frame": {
+                "w": 263,
+                "h": 98,
+                "x": 1124,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn_exit.png",
+            "frame": {
+                "w": 79,
+                "h": 85,
+                "x": 1407,
+                "y": 10
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+    }]
+}

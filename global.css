@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    background-color: #36454F;
+    color:#fff;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --primaryColor: #fdde00;
+    --secondaryColor: #fc6a01;
+  }
+  
+
+  #root {
+    padding: 4rem;
+    text-align: center;
+    /* background-color: ; */
+    border-radius: 2px;
+  }
+  
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #game-container{
+    margin: auto;
+  }
+  .login-page{
+    max-width: 580px;
+    margin: 100px auto;
+  }
+
+  .home-box{
+    max-width: 740px;
+    margin: auto;
+  }
+  .login-box{
+    max-width: 640px;
+    margin: auto;
+  }
+  .logout-box{
+    width: 1279px;
+    height: 60px;
+    margin: auto;
+    border-top: 5px solid #36454F;
+    background-color: var(--secondaryColor);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+        button {
+            width: 125px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            border: 2px solid #fdde00;
+            border-radius: 6px;
+        }
+  }
+
+  .gameHeader{
+    width: 1279px;
+    height: 40px;
+    margin: auto;
+    background-color: var(--secondaryColor);
+    border-bottom: 5px solid #36454F;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    label{
+      margin-left: auto;
+      padding:5px 2px
+    }
+    input {
+      color:#fc6a01;
+      /* margin-left: auto; */
+      font-weight: 700;
+    }
+
+    input::placeholder {
+      color: var(--secondaryColor); /* Change this to your desired color */
+      opacity: 0.75; /* Optional: Ensures the color is solid */
+    }
+
+  }
+
+  .addButton{
+      height: 25px;
+      width: 25px;
+      margin: 6px 5px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      border: 2px solid #fdde00;
+      border-radius: 6px;
+  }
