@@ -12,7 +12,11 @@ export default class AutoSpin {
 
     autoSpin() {
         this.buttonAuto = new Sprite(this.scene, Config.width - 110, Config.height - 50, 'bgButtons', 'btn-info.png');
+        //Hiding auto button-->
+        this.buttonAuto.setVisible(false);
         this.txtAutoSpin = this.scene.add.dynamicBitmapText(Config.width - 155, Config.height - 70, 'txt_bitmap', Options.txtAutoSpin, 38);
+        //Hiding text auto button-->
+        this.txtAutoSpin.setVisible(false);
         this.txtAutoSpin.setDisplayCallback(this.scene.textCallback);
         this.buttonAuto.on('pointerdown', () => {
             if (!Options.checkClick) {

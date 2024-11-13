@@ -13,21 +13,32 @@ export default class BaseSpin {
 
     addSpin() {
         this.bgSpin = new Sprite(this.scene, Config.width - 305, Config.height - 68, 'bgButtons', 'btn-spin.png');
+        this.bgSpinClick = new Sprite(this.scene, Config.width - 305, Config.height - 68, 'bgButtons', 'spin_button_click.png');
+
+        this.bgSpinClick.setVisible(false);
+
         //text spin
         this.txtSpin = this.scene.add.dynamicBitmapText(Config.width - 315, Config.height - 70, 'txt_bitmap', Options.txtSpin, 38);
         this.txtSpin.setDisplayCallback(this.scene.textCallback);
         this.bgSpin.on('pointerdown', this.playTweens, this);
-        this.bgSpin.on('pointerup', () => this.bgSpin.setScale(1));
+        this.bgSpin.on('pointerout', () => {
+            this.bgSpin.setScale(1);
+            this.bgSpin.setVisible(true);
+            this.bgSpinClick.setVisible(false);
+        });
         
     }
     totalWin(){
-        this.totalWin = new Sprite(this.scene, Config.width - 450, Config.height - 68, 'bgButtons', 'totalwin.png');
-        this.totalWin.scale = 0.75;
+        this.totalWin = new Sprite(this.scene, Config.width - 600, Config.height - 68, 'bgButtons', 'totalwin.png');
+        this.totalWin.scale = 1;
     }
 
     playTweens() {
         if (!Options.checkClick && this.scene.valueMoney >=
             (Options.coin * Options.line) && Options.txtAutoSpin === 'AUTO') {
+            //button click animation
+            this.bgSpin.setVisible(false);
+            this.bgSpinClick.setVisible(true);
             //detroy line array
             this.destroyLineArr();
             //setTint
@@ -79,7 +90,8 @@ export default class BaseSpin {
         this.scene.autoSpin.buttonAuto.setTint(0xa09d9d);
         this.scene.maxBet.maxBet.setTint(0xa09d9d);
         this.scene.coin.coin.setTint(0xa09d9d);
-        this.scene.btnLine.btnLine.setTint(0xa09d9d);
+        this.scene.btnLine.btnLinePlus.setTint(0xa09d9d);
+        this.scene.btnLine.btnLineMinus.setTint(0xa09d9d);
         this.scene.btnMusic.setTint(0xa09d9d);
         this.scene.btnSound.setTint(0xa09d9d);
     }

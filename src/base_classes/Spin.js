@@ -14,7 +14,8 @@ export default class Spin {
         this.scene.autoSpin.buttonAuto.clearTint();
         this.scene.maxBet.maxBet.clearTint();
         this.scene.coin.coin.clearTint();
-        this.scene.btnLine.btnLine.clearTint();
+        this.scene.btnLine.btnLinePlus.clearTint();
+        this.scene.btnLine.btnLineMinus.clearTint();
         this.scene.btnMusic.clearTint();
         this.scene.btnSound.clearTint();
     }
@@ -176,17 +177,20 @@ export default class Spin {
         let width = this.setTextWidthWin();
         //check empty text win
         if (!this.scene.txtWin) {
-            this.scene.txtWin = this.scene.add.text(width, Config.height - 130, 'WIN: ' + Options.moneyWin + ' $ ', {
-                fontSize : '20px',
-                color : '#25a028',
-                fontFamily : 'PT Serif'
+            this.scene.txtWin = this.scene.add.text(Config.width - 655, Config.height - 68, ' $ ' +  Options.moneyWin, {
+                fontSize : '30px',
+                color : '#98d7f7',
+                fontFamily : 'PT Serif',
+                fontWeight:800,
             });
         } else {
             this.scene.txtWin.destroy();
-            this.scene.txtWin = this.scene.add.text(width, Config.height - 130, 'WIN: ' + Options.moneyWin + ' $ ', {
-                fontSize : '20px',
-                color : '#25a028',
-                fontFamily : 'PT Serif'
+            this.scene.txtWin = this.scene.add.text(Config.width - 655, Config.height - 68, ' $ ' +  Options.moneyWin, {
+                fontSize : '30px',
+                color : '#98d7f7',
+                fontFamily : 'PT Serif',
+                fontWeight:800,
+
             });
         }
         //save localStorage

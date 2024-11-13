@@ -1,21 +1,21 @@
 {
-   "textures": [
+    "textures": [
 		{
 			"image": "button.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 800,
-				"h": 80
-		},
-		"scale": 1,
+				"w": 1247,
+				"h": 101
+			},
+			"scale": 1,
     "frames": [
         {
             "filename": "btn-info.png",
             "frame": {
-                "w": 72,
-                "h": 69,
-                "x": 10,
-                "y": 10
+                "w": 65,
+                "h": 62,
+                "x": 3,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -23,12 +23,12 @@
             }
         },
         {
-            "filename": "btn-line.png",
+            "filename": "info_button_click",
             "frame": {
-                "w": 240,
-                "h": 70,
-                "x": 102,
-                "y": 10
+                "w": 65,
+                "h": 62,
+                "x": 74,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -36,12 +36,12 @@
             }
         },
         {
-            "filename": "totalwin.png",
+            "filename": "plus_button.png",
             "frame": {
-                "w": 209,
-                "h": 82,
-                "x": 362,
-                "y": 10
+                "w": 65,
+                "h": 62,
+                "x": 145,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -49,12 +49,38 @@
             }
         },
         {
-            "filename": "btn-coin.png",
+            "filename": "plus_button_click.png",
             "frame": {
-                "w": 100,
-                "h": 91,
-                "x": 591,
-                "y": 10
+                "w": 65,
+                "h": 62,
+                "x": 216,
+                "y": 3
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "-button.png",
+            "frame": {
+                "w": 65,
+                "h": 62,
+                "x": 287,
+                "y": 3
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "-button_click.png",
+            "frame": {
+                "w": 65,
+                "h": 62,
+                "x": 358,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -64,10 +90,23 @@
         {
             "filename": "btn-maxbet.png",
             "frame": {
-                "w": 100,
-                "h": 91,
-                "x": 711,
-                "y": 10
+                "w": 89,
+                "h": 86,
+                "x": 429,
+                "y": 3
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "btn-maxbet_click.png",
+            "frame": {
+                "w": 89,
+                "h": 86,
+                "x": 524,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -77,10 +116,10 @@
         {
             "filename": "btn-spin.png",
             "frame": {
-                "w": 153,
-                "h": 90,
-                "x": 831,
-                "y": 10
+                "w": 146,
+                "h": 92,
+                "x": 619,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -88,12 +127,12 @@
             }
         },
         {
-            "filename": "auto",
+            "filename": "spin_button_click.png",
             "frame": {
-                "w": 100,
-                "h": 91,
-                "x": 1004,
-                "y": 10
+                "w": 146,
+                "h": 92,
+                "x": 771,
+                "y": 3
             },
             "anchor": {
                 "x": 0.5,
@@ -105,8 +144,8 @@
             "frame": {
                 "w": 263,
                 "h": 98,
-                "x": 1124,
-                "y": 10
+                "x": 3,
+                "y": 101
             },
             "anchor": {
                 "x": 0.5,
@@ -118,8 +157,34 @@
             "frame": {
                 "w": 79,
                 "h": 85,
-                "x": 1407,
-                "y": 10
+                "x": 272,
+                "y": 101
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "totalwin.png",
+            "frame": {
+                "w": 202,
+                "h": 73,
+                "x": 357,
+                "y": 101
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "total_bet_bg",
+            "frame": {
+                "w": 224,
+                "h": 57,
+                "x": 565,
+                "y": 101
             },
             "anchor": {
                 "x": 0.5,
@@ -131,5 +196,5 @@
         "description": "Atlas generado con Atlas Packer Gamma V2",
         "web": "https://gammafp.github.io/atlas-packer-phaser/"
     }
-    }]
+}]
 }

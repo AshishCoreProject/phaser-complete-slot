@@ -4,7 +4,7 @@ export default {
 	txtSpin: '',
 	// txtSpin: 'SPIN',
 	txtAutoSpin: '',
-	// txtAutoSpin: 'AUTO',
+	txtAutoSpin: 'AUTO',
 	txtAuto : 5,
 	moneyWin: 0,
 	txtMaxBet: '',
