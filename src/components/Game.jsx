@@ -44,17 +44,17 @@ function Game({setLoggedIn, loggedIn}) {
     }
     return (
         <>
-            <div className='flex flex-col justify-center'>
+            {/* <div className='flex flex-col justify-center'>
                 <div className='gameHeader'>
                     <label>$</label>
                     <input min="0" step="1" value={inputMoney} onChange={handleInput} placeholder='Add Money' className='bg-[#fff] h-[22px] ml-2 my-2 w-32 pl-3 rounded-sm' type="number"/>
                     <button className='addButton' onClick={handleMoney}>+</button>
-                </div>
+                </div> */}
                 <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
-                <div className='logout-box'>
+                {/* <div className='logout-box'>
                     <button onClick={handleClick}>Log out</button>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

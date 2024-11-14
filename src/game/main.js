@@ -22,7 +22,7 @@ export const Config = {
         target: 60
     },
     scale: {
-        // mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.FIT,
         // autoCenter: Phaser.Scale.CenterType,
         // autoCenter: Phaser.Scale.CENTER_BOTH
     },

@@ -22,7 +22,7 @@
   
 
   #root {
-    padding: 4rem;
+    /* padding: 5px; */
     text-align: center;
     /* background-color: ; */
     border-radius: 2px;
@@ -38,7 +38,16 @@
     }
   }
   #game-container{
-    margin: auto;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #1b0044; /* Match game background color to blend in */
   }
   .login-page{
     max-width: 580px;
@@ -110,3 +119,17 @@
       border: 2px solid #fdde00;
       border-radius: 6px;
   }
+
+  #overlay-button {
+    position: absolute;
+    top: 20px;  /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 10;  /* Ensure it stays above the canvas */
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
