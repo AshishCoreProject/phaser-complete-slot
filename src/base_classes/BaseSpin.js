@@ -90,8 +90,9 @@ export default class BaseSpin {
         this.scene.autoSpin.buttonAuto.setTint(0xa09d9d);
         this.scene.maxBet.maxBet.setTint(0xa09d9d);
         this.scene.coin.coin.setTint(0xa09d9d);
-        this.scene.btnLine.btnLinePlus.setTint(0xa09d9d);
-        this.scene.btnLine.btnLineMinus.setTint(0xa09d9d);
+        this.scene.coin.coinMinus.setTint(0xa09d9d)
+        // this.scene.btnLine.btnLinePlus.setTint(0xa09d9d);
+        // this.scene.btnLine.btnLineMinus.setTint(0xa09d9d);
         this.scene.btnMusic.setTint(0xa09d9d);
         this.scene.btnSound.setTint(0xa09d9d);
     }

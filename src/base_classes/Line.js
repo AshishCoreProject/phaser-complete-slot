@@ -10,18 +10,19 @@ export default class Line {
     }
 
     addLine() {
-        this.btnLinePlus = new Sprite(this.scene, Config.width - 760, Config.height - 67, 'bgButtons', 'plus_button.png');
-        this.btnLinePlusClick = new Sprite(this.scene, Config.width - 760, Config.height - 67, 'bgButtons','plus_button_click.png');
-        this.btnLinePlusClick.setVisible(false);
+        // this.btnLinePlus = new Sprite(this.scene, Config.width - 760, Config.height - 67, 'bgButtons', 'plus_button.png');
+        // this.btnLinePlusClick = new Sprite(this.scene, Config.width - 760, Config.height - 67, 'bgButtons','plus_button_click.png');
+        // this.btnLinePlusClick.setVisible(false);
 
         this.txtLine = this.scene.add.dynamicBitmapText(Config.width - 915, Config.height - 70, 'txt_bitmap', Options.txtLine, 38);
         this.txtLine.setDisplayCallback(this.scene.textCallback);
         this.txtCountLine = this.scene.add.text(Config.width - 855, Config.height - 90, Options.line, {
             fontSize : '35px',
             color : '#fff',
-            fontFamily : 'PT Serif'
+            fontFamily : 'Montserrat'
         });
-
+        this.txtCountLine.setVisible(false)
+        /*
         //pointer down
         this.btnLinePlus.on('pointerdown', () => {
             this.addUpdateLogic();
@@ -39,6 +40,7 @@ export default class Line {
                 this.btnLinePlusClick.setVisible(false);
             }
         })
+        */
 
     }
 
@@ -51,21 +53,22 @@ export default class Line {
             if (Options.line < 20) {
                 Options.line ++;
                 this.txtCountLine.setText(Options.line);
-                this.scene.maxBet.txtCountMaxBet.setText('BET: ' + Options.line * Options.coin);
+                this.scene.maxBet.txtCountMaxBet.setText(Options.line * Options.coin);
             } else {
                 Options.line = 1;
                 this.txtCountLine.setText(Options.line);
-                this.scene.maxBet.txtCountMaxBet.setText('BET: ' + Options.line * Options.coin);
+                this.scene.maxBet.txtCountMaxBet.setText(Options.line * Options.coin);
             }
         }
     }
 
     minusLine(){
-        this.btnLineMinus = new Sprite(this.scene, Config.width - 920, Config.height - 67, 'bgButtons', '-button.png');
+        // this.btnLineMinus = new Sprite(this.scene, Config.width - 920, Config.height - 67, 'bgButtons', '-button.png');
 
-        this.btnLineMinusClick = new Sprite(this.scene, Config.width - 920 , Config.height - 67, 'bgButtons', '-button_click.png');
-        this.btnLineMinusClick.setVisible(false);
+        // this.btnLineMinusClick = new Sprite(this.scene, Config.width - 920 , Config.height - 67, 'bgButtons', '-button_click.png');
+        // this.btnLineMinusClick.setVisible(false);
 
+        /*
         //pointer down
         this.btnLineMinus.on('pointerdown', () => {
            this.minusUpdateLogic();
@@ -78,6 +81,7 @@ export default class Line {
             this.btnLineMinus.setVisible(true);
             this.btnLineMinusClick.setVisible(false);
          })
+        */
 
         }
 
@@ -90,11 +94,11 @@ export default class Line {
             if(Options.line > 1) {
                 Options.line --;
                 this.txtCountLine.setText(Options.line);
-                this.scene.maxBet.txtCountMaxBet.setText('BET: ' + Options.line * Options.coin);
+                this.scene.maxBet.txtCountMaxBet.setText(Options.line * Options.coin);
             } else{
                 Options.line = 20;
                 this.txtCountLine.setText(Options.line);
-                this.scene.maxBet.txtCountMaxBet.setText('BET: ' + Options.line * Options.coin);
+                this.scene.maxBet.txtCountMaxBet.setText(Options.line * Options.coin);
             }
            } 
     }

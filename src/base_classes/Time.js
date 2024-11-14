@@ -10,7 +10,7 @@ export default class Time {
         this.txtTime = this.scene.add.text(Config.width - 1260, Config.height - 700, '', {
             fontSize : '20px',
             color : '#ffffff',
-            fontFamily : 'PT Serif'
+            fontFamily : 'Montserrat'
         });
         //function callbackTime
         this.callbackTime();

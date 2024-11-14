@@ -52,8 +52,8 @@ export  class Preload extends Phaser.Scene {
         });
         this.load.on('complete', this.onComplete, this);
         for(let i = 0; i < 100; i++) {
-            this.load.image("earth", "https://i.postimg.cc/135ZZWJL/bg.png");
-            this.load.atlas('background' + i, 'images/bg/bg.png', 'images/bg/bg.json');
+            // this.load.image("earth", "https://i.postimg.cc/135ZZWJL/bg.png");
+            // this.load.atlas('background' + i, 'images/bg/bg.png', 'images/bg/bg.json');
         }
     }
 

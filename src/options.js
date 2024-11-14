@@ -12,7 +12,7 @@ export default {
 	coin: 10,
 	txtCoin: '',
 	// txtCoin: 'COIN',
-	line: 1,
+	line: 20,
 	txtLine: '',
 	// txtLine: 'LINES',
 	txtInfo: '',

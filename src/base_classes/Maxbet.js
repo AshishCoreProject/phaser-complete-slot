@@ -17,11 +17,24 @@ export default class Maxbet {
 
         this.txtMaxBet = this.scene.add.dynamicBitmapText(Config.width - 550, Config.height - 70, 'txt_bitmap', Options.txtMaxBet, 38);
         this.txtMaxBet.setDisplayCallback(this.scene.textCallback);
-        this.txtCountMaxBet = this.scene.add.text(Config.width - 355, Config.height - 620, 'BET: ' + Options.coin * Options.line, {
+        this.txtCountMaxBet = this.scene.add.text(Config.width - 872, Config.height - 74, Options.coin * Options.line, {
             fontSize : '30px',
-            color : '#fff400',
-            fontFamily : 'PT Serif'
+            color : '#ffffff',
+            fontFamily : 'Montserrat'
         });
+        this.staticTxt = 'Total Bet'
+        this.txtStaticTotalBet = this.scene.add.text(Config.width - 879, Config.height - 93, this.staticTxt, {
+            fontSize : '20px',
+            color : '#2075ff',
+            fontFamily : 'Montserrat',
+        })
+
+        // console.log(this.txtMaxBet, "txtMaxBet");
+        // console.log(typeof this.txtCountMaxBet.text, "txtCountMaxBet");
+        // if(Number(this.txtCountMaxBet.text) > 900 ){
+        //     console.log("hi")
+        //     this.txtCountMaxBet.setSize(Config.width - 870, );
+        // }
 
         this.maxBet.setInteractive();
         this.maxBet.on('pointerdown', this.onMaxbetDown, this);
@@ -43,7 +56,7 @@ export default class Maxbet {
             this.scene.btnLine.txtCountLine.setText(Options.line);
             Options.coin = 50;
             this.scene.coin.txtCountCoin.setText( 'Coin: ' + Options.coin);
-            this.txtCountMaxBet.setText('BET: ' + Options.line * Options.coin);
+            this.txtCountMaxBet.setText(Options.line * Options.coin);
         }
     }
 

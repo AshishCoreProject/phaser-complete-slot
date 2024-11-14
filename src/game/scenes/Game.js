@@ -1,6 +1,7 @@
 import {Config} from '../main';
 import Options from '../../options';
 import { moneyStore } from '../../money';
+import webfontloader, * as WebFontLoader from "../../lib/webfontloader"
 
 //import Class
 import Time from '../../base_classes/Time';
@@ -29,7 +30,19 @@ export  class Game extends Phaser.Scene {
 
 
     create() {
-
+        
+        WebFontLoader.default.load({
+            google: {
+                families: ['Montserrat'],
+            }, 
+            custom:{
+                families: ['Montserrat', 'Host Grotesk'],
+            },
+            active: () => {
+                this.maxBet.txtCountMaxBet.setFontFamily("'Montserrat'");
+                this.maxBet.txtStaticTotalBet.setFontFamily("Host Grotesk");
+            }
+        });        
         //Class Audio
         this.audioObject = new Audio(this);
         // bitmap text
